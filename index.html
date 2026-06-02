@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEC AUSTRAL — Gestión de Proyectos de Estructuras Metálicas</title>
+  <meta name="description" content="Oficina técnica especializada en gestión de proyectos de estructuras metálicas. Barcelona." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,300;1,14..32,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ NAV ══════════════════════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__brand">
+        <span class="nav__logo" aria-hidden="true">
+          <span class="nav__logo-rect nav__logo-rect--tall"></span>
+          <span class="nav__logo-rect nav__logo-rect--short"></span>
+        </span>
+        TEC AUSTRAL
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="proyectos.html" class="nav__link">Proyectos</a></li>
+        <li><a href="#servicios" class="nav__link">Servicios</a></li>
+        <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+      </ul>
+
+      <div class="nav__ctas">
+        <a href="mailto:tbayona@tecaustral.com" class="btn btn--outline">ESCRIBINOS</a>
+        <a href="#contacto" class="btn btn--fill">INICIAR PROYECTO</a>
+      </div>
+
+      <button class="nav__hamburger" aria-label="Menú" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" data-nav-mobile>
+      <ul role="list">
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="btn btn--fill" style="width:100%;justify-content:center;">INICIAR PROYECTO</a>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ══════════════════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <!-- Gradient placeholder — replace with real photo -->
+      <div class="hero__photo-placeholder"></div>
+    </div>
+    <div class="hero__content">
+      <h1 class="hero__heading">Gestión de<br>proyectos de<br>estructura metálica.</h1>
+      <div class="hero__cta-block">
+        <p class="hero__lede">Cuando los proyectos se vuelven difíciles de gestionar y las decisiones pierden claridad, intervenimos para ordenar, priorizar y ejecutar.</p>
+        <a href="#contacto" class="btn btn--fill btn--lg">INICIAR PROYECTO</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LOGO STRIP ════════════════════════════════════════════════════ -->
+  <section class="logos">
+    <div class="logos__inner">
+      <p class="logos__tagline">En TEC AUSTRAL gestionamos proyectos de estructuras metálicas, optimizando operaciones y asegurando resultados consistentes y de calidad.</p>
+      <div class="logos__row" aria-label="Sectores de actuación">
+        <span class="logos__item">INDUSTRIAL</span>
+        <span class="logos__item">LOGÍSTICA</span>
+        <span class="logos__item">INFRAESTRUCTURA</span>
+        <span class="logos__item">OBRA CIVIL</span>
+        <span class="logos__item">REHABILITACIÓN</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ══════════════════════════════════════════════════════ -->
+  <section class="projects" id="proyectos">
+    <div class="projects__header">
+      <h2 class="projects__heading">Proyectos ejecutados<br>con rigor y precisión.</h2>
+    </div>
+    <div class="projects__track" role="list">
+
+      <article class="project-card" role="listitem">
+        <div class="project-card__img project-card__img--1"></div>
+        <div class="project-card__info">
+          <span class="project-card__num">01</span>
+          <h3 class="project-card__title">Nave Industrial<br>Zona Franca</h3>
+          <p class="project-card__meta">Barcelona · 2024</p>
+          <a href="proyectos/nave-industrial-zona-franca.html" class="project-card__link">VER MÁS</a>
+        </div>
+      </article>
+
+      <article class="project-card" role="listitem">
+        <div class="project-card__img project-card__img--2"></div>
+        <div class="project-card__info">
+          <span class="project-card__num">02</span>
+          <h3 class="project-card__title">Centro Logístico<br>Mediterráneo</h3>
+          <p class="project-card__meta">Tarragona · 2023</p>
+          <a href="proyectos/centro-logistico-mediterraneo.html" class="project-card__link">VER MÁS</a>
+        </div>
+      </article>
+
+      <article class="project-card" role="listitem">
+        <div class="project-card__img project-card__img--3"></div>
+        <div class="project-card__info">
+          <span class="project-card__num">03</span>
+          <h3 class="project-card__title">Puente Peatonal<br>Eixample</h3>
+          <p class="project-card__meta">Barcelona · 2023</p>
+          <a href="proyectos/puente-peatonal-eixample.html" class="project-card__link">VER MÁS</a>
+        </div>
+      </article>
+
+      <article class="project-card" role="listitem">
+        <div class="project-card__img project-card__img--4"></div>
+        <div class="project-card__info">
+          <span class="project-card__num">04</span>
+          <h3 class="project-card__title">Plataforma<br>Offshore</h3>
+          <p class="project-card__meta">Mar Mediterráneo · 2022</p>
+          <a href="proyectos/plataforma-offshore.html" class="project-card__link">VER MÁS</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══ STATS ═════════════════════════════════════════════════════════ -->
+  <section class="stats">
+    <p class="stats__eyebrow">¿SABÍAS QUE?</p>
+    <div class="stats__row">
+      <div class="stats__item">
+        <span class="stats__number">15+</span>
+        <span class="stats__label">PROYECTOS COMPLEJOS<br>EJECUTADOS</span>
+      </div>
+      <div class="stats__divider" aria-hidden="true"></div>
+      <div class="stats__item">
+        <span class="stats__number">10</span>
+        <span class="stats__label">AÑOS EN EL<br>SECTOR</span>
+      </div>
+      <div class="stats__divider" aria-hidden="true"></div>
+      <div class="stats__item">
+        <span class="stats__number">98%</span>
+        <span class="stats__label">CLIENTES<br>SATISFECHOS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PILARES ═══════════════════════════════════════════════════════ -->
+  <section class="pillars">
+    <div class="pillars__inner">
+      <div class="pillars__left">
+        <h2 class="pillars__heading">Comprometidos<br>con la calidad<br>y la adaptabilidad.</h2>
+      </div>
+      <div class="pillars__right">
+        <div class="pillars__item">
+          <span>EXPERIENCIA COMPROBADA EN PROYECTOS EMBLEMÁTICOS</span>
+        </div>
+        <div class="pillars__item">
+          <span>GESTIÓN INTEGRAL DE TODAS LAS FASES DEL PROYECTO</span>
+        </div>
+        <div class="pillars__item">
+          <span>ADAPTABILIDAD A LAS NECESIDADES ESPECÍFICAS DE CADA PROYECTO</span>
+        </div>
+        <div class="pillars__item">
+          <span>SOLUCIONES TÉCNICAS INNOVADORAS EN ESTRUCTURAS METÁLICAS</span>
+        </div>
+        <div class="pillars__item">
+          <span>COMUNICACIÓN EFECTIVA Y SATISFACCIÓN DEL CLIENTE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES ══════════════════════════════════════════════════════ -->
+  <section class="services" id="servicios">
+    <div class="services__row services__row--reverse">
+      <div class="services__img services__img--1"></div>
+      <div class="services__text">
+        <h2 class="services__heading">Experiencia<br>Comprobada</h2>
+        <p class="services__body">Participación en proyectos emblemáticos que exigen soluciones técnicas innovadoras y adaptativas. Un equipo multidisciplinar con años de experiencia en el sector de estructuras metálicas.</p>
+      </div>
+    </div>
+    <div class="services__row">
+      <div class="services__img services__img--2"></div>
+      <div class="services__text">
+        <h2 class="services__heading">Gestión<br>Integral</h2>
+        <p class="services__body">Coordinamos todas las fases del proyecto para asegurar tiempos y calidad óptimos. Un único interlocutor técnico para controlar plazos, costes y calidad con total transparencia.</p>
+      </div>
+    </div>
+    <div class="services__row services__row--reverse">
+      <div class="services__img services__img--3"></div>
+      <div class="services__text">
+        <h2 class="services__heading">Adaptabilidad<br>al Cliente</h2>
+        <p class="services__body">Flexibilidad para ajustar nuestras soluciones a las necesidades específicas y condiciones de cada proyecto. Escucha activa, comunicación efectiva y compromiso con la satisfacción del cliente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT / EXPERIENCE ════════════════════════════════════════════ -->
+  <section class="about" id="nosotros">
+    <div class="about__photos">
+      <div class="about__photo about__photo--1"></div>
+      <div class="about__photo about__photo--2"></div>
+    </div>
+    <div class="about__text">
+      <h2 class="about__heading">Experiencia</h2>
+      <p class="about__body">Durante más de 10 años hemos construido nuestra reputación en el sector de la gestión técnica de proyectos. Nuestros profesionales aplican técnicas probadas junto a las metodologías más actuales para entregar proyectos de forma eficiente y con la mayor calidad.</p>
+      <p class="about__body">Entendemos lo que funciona porque llevamos años haciéndolo. Así es como nos mantenemos a la vanguardia manteniendo la calidad en el centro de cada proyecto que gestionamos.</p>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIALS ══════════════════════════════════════════════════ -->
+  <section class="testimonials">
+    <div class="testimonials__inner">
+
+      <div class="testimonial">
+        <div class="testimonial__header">
+          <span class="testimonial__name">GRUPO INDUSTRIAL MEDITERRÁNEO</span>
+          <span class="testimonial__role">CLIENTE · NAVE ZONA FRANCA</span>
+        </div>
+        <blockquote class="testimonial__quote">
+          "Desde el primer día, el equipo de TEC AUSTRAL gestionó el proceso con total claridad. Entregaron 3 semanas antes del plazo con un ahorro del 8% sobre el presupuesto. No hubiéramos llegado sin ellos."
+        </blockquote>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial__header">
+          <span class="testimonial__name">LOGICARD S.A.</span>
+          <span class="testimonial__role">CLIENTE · CENTRO LOGÍSTICO TARRAGONA</span>
+        </div>
+        <blockquote class="testimonial__quote">
+          "Tuvimos un plazo inamovible vinculado al inicio de operaciones. TEC AUSTRAL cumplió. La coordinación entre las tres ingenierías fue impecable y el reporting semanal nos dio una visibilidad que nunca habíamos tenido en un proyecto."
+        </blockquote>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ CASOS DE ESTUDIO ══════════════════════════════════════════════ -->
+  <section class="cases">
+    <div class="cases__inner">
+      <div class="cases__header">
+        <h2 class="cases__heading">Casos de estudio</h2>
+        <a href="casos-de-estudio.html" class="btn btn--outline-dark">VER TODOS</a>
+      </div>
+      <div class="cases__grid">
+
+        <a href="casos-de-estudio/nave-industrial.html" class="case-card">
+          <div class="case-card__img case-card__img--1"></div>
+          <div class="case-card__body">
+            <h3 class="case-card__title">Nave Industrial Zona Franca</h3>
+          </div>
+        </a>
+
+        <a href="casos-de-estudio/puente-peatonal.html" class="case-card">
+          <div class="case-card__img case-card__img--2"></div>
+          <div class="case-card__body">
+            <h3 class="case-card__title">Puente Peatonal Eixample</h3>
+          </div>
+        </a>
+
+        <a href="casos-de-estudio/centro-logistico.html" class="case-card">
+          <div class="case-card__img case-card__img--3"></div>
+          <div class="case-card__body">
+            <h3 class="case-card__title">Centro Logístico Mediterráneo</h3>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT CTA ════════════════════════════════════════════════════ -->
+  <section class="contact-cta" id="contacto">
+    <div class="contact-cta__inner">
+      <h2 class="contact-cta__heading">¿Tiene un proyecto<br>en mente?</h2>
+      <div class="contact-cta__form">
+        <form action="#" method="POST">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="nombre">NOMBRE</label>
+              <input type="text" id="nombre" name="nombre" required autocomplete="name" />
+            </div>
+            <div class="form-field">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="mensaje">MENSAJE</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--fill btn--lg">ENVIAR MENSAJE</button>
+        </form>
+        <div class="contact-cta__info">
+          <div class="contact-info-item">
+            <span class="contact-info-label">TELÉFONO</span>
+            <a href="tel:+34642033304">+34 642 033 304</a>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-label">EMAIL</span>
+            <a href="mailto:tbayona@tecaustral.com">tbayona@tecaustral.com</a>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-label">DIRECCIÓN</span>
+            <address>Carrer de Diputació 122<br>08015 Barcelona</address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__col footer__col--address">
+        <span class="footer__col-label">DIRECCIÓN</span>
+        <address>Carrer de Diputació 122<br>Barcelona, España</address>
+      </div>
+      <div class="footer__col footer__col--contact">
+        <span class="footer__col-label">CONTACTO</span>
+        <a href="tel:+34642033304">+34 642 033 304</a>
+        <a href="mailto:tbayona@tecaustral.com">tbayona@tecaustral.com</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">NAVEGACIÓN</span>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">LEGAL</span>
+        <a href="/aviso-legal">Aviso Legal</a>
+        <a href="/privacidad">Privacidad</a>
+      </div>
+    </div>
+
+    <div class="footer__wordmark-row">
+      <span class="footer__logo" aria-hidden="true">
+        <span class="footer__logo-rect footer__logo-rect--tall"></span>
+        <span class="footer__logo-rect footer__logo-rect--short"></span>
+      </span>
+      <span class="footer__wordmark">TEC AUSTRAL</span>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; 2026 TEC AUSTRAL · Todos los derechos reservados</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
