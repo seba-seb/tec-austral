@@ -152,48 +152,60 @@
   <section class="projects" id="casos">
     <div class="projects__header">
       <h2 class="projects__heading">Problemas que<br>ya resolvimos.</h2>
+      <div class="projects__nav" aria-label="Navegación del carrusel">
+        <button class="projects__arrow projects__arrow--prev" aria-label="Anterior" data-projects-prev>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="projects__arrow projects__arrow--next" aria-label="Siguiente" data-projects-next>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M8 4L14 10L8 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
     </div>
-    <div class="projects__track" role="list">
+    <div class="projects__track" role="list" data-projects-track>
 
-      <article class="project-card" role="listitem">
+      <a href="casos/estel.html" class="project-card" role="listitem">
         <div class="project-card__img project-card__img--1"></div>
         <div class="project-card__info">
           <span class="project-card__num">01 · PEQUEÑA ESCALA</span>
           <h3 class="project-card__title">Escalera Estel</h3>
           <p class="project-card__meta">Cuando proyecto y realidad no coinciden, rediseñamos para construir.</p>
-          <a href="casos/estel.html" class="project-card__link">VER CASO</a>
+          <span class="project-card__link">VER CASO</span>
         </div>
-      </article>
+      </a>
 
-      <article class="project-card" role="listitem">
+      <a href="casos/fe.html" class="project-card" role="listitem">
         <div class="project-card__img project-card__img--2"></div>
         <div class="project-card__info">
           <span class="project-card__num">02 · MEDIANA ESCALA</span>
           <h3 class="project-card__title">Extensión de balcones<br>— Edificio FE</h3>
           <p class="project-card__meta">Detectar un error antes de fabricar evita un coste después.</p>
-          <a href="casos/fe.html" class="project-card__link">VER CASO</a>
+          <span class="project-card__link">VER CASO</span>
         </div>
-      </article>
+      </a>
 
-      <article class="project-card" role="listitem">
+      <a href="casos/estadio.html" class="project-card" role="listitem">
         <div class="project-card__img project-card__img--3"></div>
         <div class="project-card__info">
           <span class="project-card__num">03 · GRAN ESCALA</span>
           <h3 class="project-card__title">Estadio de referencia<br>en Barcelona</h3>
           <p class="project-card__meta">En proyectos de gran escala, la organización técnica también es ingeniería.</p>
-          <a href="casos/estadio.html" class="project-card__link">VER CASO</a>
+          <span class="project-card__link">VER CASO</span>
         </div>
-      </article>
+      </a>
 
-      <article class="project-card" role="listitem">
+      <a href="casos/monaco.html" class="project-card" role="listitem">
         <div class="project-card__img project-card__img--4"></div>
         <div class="project-card__info">
           <span class="project-card__num">04 · INTERNACIONAL</span>
           <h3 class="project-card__title">Ascensor y pasarela<br>— Mónaco</h3>
           <p class="project-card__meta">Precisión técnica sin fronteras.</p>
-          <a href="casos/monaco.html" class="project-card__link">VER CASO</a>
+          <span class="project-card__link">VER CASO</span>
         </div>
-      </article>
+      </a>
 
     </div>
   </section>
@@ -207,18 +219,20 @@
       </div>
       <div class="team__grid">
         <article class="team-card">
-          <!-- PLACEHOLDER — 400×400px, fondo neutro -->
           <div class="team-card__photo" role="img" aria-label="Retrato de Tamara Bayona"></div>
-          <h3 class="team-card__name">Tamara Bayona</h3>
-          <p class="team-card__role">Dirección y Gestión de Proyectos</p>
-          <p class="team-card__bio">Especialista en calidad y sistemas integrados con experiencia en proyectos de estructura metálica de gran escala.</p>
+          <div class="team-card__text">
+            <h3 class="team-card__name">Tamara Bayona</h3>
+            <p class="team-card__role">Dirección y Gestión de Proyectos</p>
+            <p class="team-card__bio">Especialista en calidad y sistemas integrados con experiencia en proyectos de estructura metálica de gran escala.</p>
+          </div>
         </article>
         <article class="team-card">
-          <!-- PLACEHOLDER — 400×400px, fondo neutro -->
           <div class="team-card__photo" role="img" aria-label="Retrato de Milagros Bogado"></div>
-          <h3 class="team-card__name">Milagros Bogado</h3>
-          <p class="team-card__role">Arquitectura y Planificación</p>
-          <p class="team-card__bio">Arquitecta especializada en planificación y coordinación técnica en obras civiles de referencia.</p>
+          <div class="team-card__text">
+            <h3 class="team-card__name">Milagros Bogado</h3>
+            <p class="team-card__role">Arquitectura y Planificación</p>
+            <p class="team-card__bio">Arquitecta especializada en planificación y coordinación técnica en obras civiles de referencia.</p>
+          </div>
         </article>
       </div>
     </div>
