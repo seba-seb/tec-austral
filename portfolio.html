@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio · TEC AUSTRAL</title>
+  <meta name="description" content="Proyectos de estructuras metálicas resueltos por TEC AUSTRAL. Pequeña, mediana y gran escala en Barcelona y proyectos internacionales." />
+  <meta property="og:title" content="Portfolio · TEC AUSTRAL" />
+  <meta property="og:description" content="Proyectos de estructuras metálicas resueltos por TEC AUSTRAL. Pequeña, mediana y gran escala en Barcelona y proyectos internacionales." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,700;0,14..32,800;0,14..32,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+
+  <!-- ═══ NAV ══════════════════════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__logo" aria-hidden="true">
+          <span class="nav__logo-rect nav__logo-rect--tall"></span>
+          <span class="nav__logo-rect nav__logo-rect--short"></span>
+        </span>
+        TEC AUSTRAL
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="servicios.html" class="nav__link">Servicios</a></li>
+        <li><a href="portfolio.html" class="nav__link" aria-current="page">Portfolio</a></li>
+        <li><a href="casos.html" class="nav__link">Casos</a></li>
+        <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+        <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+      </ul>
+      <div class="nav__ctas">
+        <a href="https://wa.me/+34642033304" class="btn btn--fill" target="_blank" rel="noopener">CONTACTAR</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Menú" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" data-nav-mobile>
+      <ul role="list">
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="casos.html">Casos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a href="https://wa.me/+34642033304" class="btn btn--fill" target="_blank" rel="noopener" style="width:100%;justify-content:center;">CONTACTAR</a>
+    </div>
+  </nav>
+
+  <!-- ═══ INTRO + FILTROS ════════════════════════════════════════════════ -->
+  <header class="page-header">
+    <div class="page-header__inner">
+      <h1 class="page-header__title">Proyectos.</h1>
+      <p class="page-header__lede">Trabajamos en proyectos de distinta escala y complejidad. Desde detalles metálicos hasta obras de referencia internacional. Filtra por escala.</p>
+      <div class="pf-filters" role="group" aria-label="Filtrar proyectos por escala">
+        <button class="pf-filter is-active" data-filter="todos">TODOS</button>
+        <button class="pf-filter" data-filter="pequena">PEQUEÑA ESCALA</button>
+        <button class="pf-filter" data-filter="mediana">MEDIANA ESCALA</button>
+        <button class="pf-filter" data-filter="gran">GRAN ESCALA</button>
+        <button class="pf-filter" data-filter="internacional">INTERNACIONAL</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ GRID ═══════════════════════════════════════════════════════════ -->
+  <section class="pf-grid-wrap">
+    <div class="pf-grid" data-pf-grid>
+
+      <a href="casos/estel.html" class="pf-card" data-escala="pequena">
+        <div class="pf-card__img pf-card__img--estel" role="img" aria-label="Placeholder: Escalera Estel — foto pendiente 800×600px"></div>
+        <div class="pf-card__top">
+          <h2 class="pf-card__title">Escalera Estel</h2>
+          <span class="pf-card__badge">Pequeña</span>
+        </div>
+        <p class="pf-card__headline">Cuando proyecto y realidad no coinciden, rediseñamos para construir.</p>
+        <p class="pf-card__services">Dibujo técnico · Despiece · Ajuste geométrico</p>
+        <span class="pf-card__link">VER CASO</span>
+      </a>
+
+      <a href="casos/fe.html" class="pf-card" data-escala="mediana">
+        <div class="pf-card__img pf-card__img--fe" role="img" aria-label="Placeholder: Extensión de balcones Edificio FE — foto pendiente 800×600px"></div>
+        <div class="pf-card__top">
+          <h2 class="pf-card__title">Extensión de balcones — Edificio FE</h2>
+          <span class="pf-card__badge">Mediana</span>
+        </div>
+        <p class="pf-card__headline">Detectar un error antes de fabricar evita un coste después.</p>
+        <p class="pf-card__services">Despiece · Redimensionamiento de uniones · Optimización de fabricación</p>
+        <span class="pf-card__link">VER CASO</span>
+      </a>
+
+      <a href="casos/estadio.html" class="pf-card" data-escala="gran">
+        <div class="pf-card__img pf-card__img--estadio" role="img" aria-label="Placeholder: estadio de referencia en Barcelona — foto pendiente 800×600px"></div>
+        <div class="pf-card__top">
+          <h2 class="pf-card__title">Estadio de referencia en Barcelona</h2>
+          <span class="pf-card__badge">Gran escala</span>
+        </div>
+        <p class="pf-card__headline">En proyectos de gran escala, la organización técnica también es ingeniería.</p>
+        <p class="pf-card__services">Gestión de proyecto · Coordinación técnica · Control de calidad</p>
+        <span class="pf-card__link">VER CASO</span>
+      </a>
+
+      <a href="casos/monaco.html" class="pf-card" data-escala="internacional">
+        <div class="pf-card__img pf-card__img--monaco" role="img" aria-label="Placeholder: ascensor y pasarela en Mónaco — foto pendiente 800×600px"></div>
+        <div class="pf-card__top">
+          <h2 class="pf-card__title">Ascensor y pasarela — Mónaco</h2>
+          <span class="pf-card__badge">Internacional</span>
+        </div>
+        <p class="pf-card__headline">Precisión técnica sin fronteras.</p>
+        <p class="pf-card__services">Cálculo estructural · Uniones · Control en obra</p>
+        <span class="pf-card__link">VER CASO</span>
+      </a>
+
+      <a href="casos/bunker.html" class="pf-card" data-escala="mediana">
+        <div class="pf-card__img pf-card__img--bunker" role="img" aria-label="Placeholder: recintos acorazados en locales comerciales — foto pendiente 800×600px"></div>
+        <div class="pf-card__top">
+          <h2 class="pf-card__title">Recintos acorazados — locales comerciales</h2>
+          <span class="pf-card__badge">Mediana</span>
+        </div>
+        <p class="pf-card__headline">Soluciones técnicas para requerimientos no convencionales.</p>
+        <p class="pf-card__services">Asesoría técnica · Selección de materiales · Gestión de permisos</p>
+        <span class="pf-card__link">VER CASO</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ═══ CTA ════════════════════════════════════════════════════════════ -->
+  <section class="about-cta">
+    <div class="about-cta__inner">
+      <div class="about-cta__text">
+        <h2 class="about-cta__heading">¿Tienes un proyecto<br>de estas características?</h2>
+        <p class="about-cta__sub">Cuéntanos qué está pasando. Sin compromiso.</p>
+      </div>
+      <a href="https://wa.me/+34642033304" class="btn btn--fill btn--lg" target="_blank" rel="noopener">HABLEMOS DE TU PROYECTO</a>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__col">
+        <span class="footer__col-label">TEC AUSTRAL</span>
+        <p style="font-size:14px;color:rgba(255,255,255,0.65);line-height:1.6;">Oficina técnica especializada en estructuras metálicas. Barcelona.</p>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">NAVEGACIÓN</span>
+        <a href="servicios.html">Servicios</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="casos.html">Casos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">CONTACTO</span>
+        <a href="tel:+34642033304">+34 642 033 304</a>
+        <a href="mailto:tbayona@tecaustral.com">tbayona@tecaustral.com</a>
+        <a href="mailto:comercial@tecaustral.com">comercial@tecaustral.com</a>
+        <address>Carrer de Diputació 122<br>08015 Eixample, Barcelona</address>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">LEGAL</span>
+        <a href="#">Aviso Legal</a>
+        <a href="#">Política de Privacidad</a>
+      </div>
+    </div>
+    <div class="footer__wordmark-row">
+      <span class="footer__logo" aria-hidden="true">
+        <span class="footer__logo-rect footer__logo-rect--tall"></span>
+        <span class="footer__logo-rect footer__logo-rect--short"></span>
+      </span>
+      <span class="footer__wordmark">TEC AUSTRAL</span>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 TEC AUSTRAL · Todos los derechos reservados</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // Filtro por escala
+    const filterBtns = document.querySelectorAll('.pf-filter');
+    const cards = document.querySelectorAll('.pf-card');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        const f = btn.dataset.filter;
+        cards.forEach(card => {
+          card.classList.toggle('is-hidden', f !== 'todos' && card.dataset.escala !== f);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

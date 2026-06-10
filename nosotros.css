@@ -1,0 +1,170 @@
+/* ═══ NOSOTROS PAGE ══════════════════════════════════════════ */
+
+/* ── About Hero ─────────────────────────────────────────────── */
+.about-hero {
+  padding: calc(var(--nav-h) + 2rem) clamp(1rem, 3vw, 2rem) 4rem;
+  background: var(--white);
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.about-hero__photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  align-items: start;
+}
+
+.about-hero__photo {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.about-hero__photo--1 {
+  aspect-ratio: 16/9;
+  background: linear-gradient(135deg, oklch(45% 0.10 50) 0%, oklch(65% 0.12 55) 100%);
+}
+
+.about-hero__photo--2 {
+  aspect-ratio: 16/9;
+  background: linear-gradient(135deg, oklch(28% 0.04 240) 0%, oklch(48% 0.07 220) 100%);
+  margin-top: 3rem;
+}
+
+.about-hero__text {
+  max-width: 780px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.about-hero__heading {
+  font-size: clamp(2.5rem, 5vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.0;
+  letter-spacing: -0.03em;
+  margin-bottom: 2.5rem;
+}
+
+.about-hero__body {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--grey-dark);
+  margin-bottom: 1.25rem;
+  max-width: 66ch;
+  margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+  .about-hero__photos { grid-template-columns: 1fr; }
+  .about-hero__photo--2 { margin-top: 0; }
+}
+
+/* ── About Values ─────────────────────────────────────────────── */
+.about-values {
+  background: var(--grey-soft);
+  padding: 6rem clamp(1rem, 3vw, 2rem);
+  border-top: 1px solid var(--grey-mid);
+}
+
+.about-values__inner {
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.about-values__header {
+  margin-bottom: 4rem;
+}
+
+.about-values__eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--grey-text);
+  margin-bottom: 1.25rem;
+}
+
+.about-values__heading {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.about-values__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.about-values__item {
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 8px;
+}
+
+.about-values__item h3 {
+  font-size: var(--text-lg, 1.125rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.about-values__item p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--grey-dark);
+}
+
+@media (max-width: 900px) {
+  .about-values__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .about-values__grid { grid-template-columns: 1fr; }
+}
+
+/* ── About Team ─────────────────────────────────────────────── */
+.about-team {
+  background: var(--white);
+  padding: 6rem clamp(1rem, 3vw, 2rem);
+  border-top: 1px solid var(--grey-mid);
+}
+
+.about-team__inner {
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.about-team__header {
+  margin-bottom: 3rem;
+}
+
+.about-team__heading {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-top: 1rem;
+}
+
+.about-team__photo {
+  width: 100%;
+  aspect-ratio: 16/6;
+  background: linear-gradient(135deg, oklch(30% 0.04 240) 0%, oklch(52% 0.10 50) 100%);
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.about-team__body {
+  max-width: 680px;
+}
+
+.about-team__body p {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--grey-dark);
+  margin-bottom: 1rem;
+}
+
+/* (.about-cta vive en style.css — compartido entre páginas) */

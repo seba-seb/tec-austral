@@ -1,0 +1,189 @@
+/* ═══ SERVICIOS PAGE ═════════════════════════════════════════ */
+
+/* ── Service detail rows ─────────────────────────────────────── */
+.svc-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--grey-mid);
+}
+
+.svc-detail {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  border-bottom: 1px solid var(--grey-mid);
+  scroll-margin-top: var(--nav-h);
+}
+
+.svc-detail--reverse { direction: rtl; }
+.svc-detail--reverse > * { direction: ltr; }
+
+.svc-detail__img {
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+}
+
+.svc-detail__img--1 { background: linear-gradient(145deg, oklch(30% 0.04 220) 0%, oklch(52% 0.12 50) 100%); }
+.svc-detail__img--2 { background: linear-gradient(145deg, oklch(25% 0.03 30) 0%, oklch(55% 0.12 50) 100%); }
+.svc-detail__img--3 { background: linear-gradient(145deg, oklch(28% 0.04 250) 0%, oklch(45% 0.08 60) 100%); }
+.svc-detail__img--4 { background: linear-gradient(145deg, oklch(22% 0.02 200) 0%, oklch(40% 0.08 210) 100%); }
+
+.svc-detail__body {
+  padding: 4rem clamp(2rem, 4vw, 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.svc-detail__num {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--orange);
+  margin-bottom: 1rem;
+}
+
+.svc-detail__title {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+
+.svc-detail__desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--grey-dark);
+  max-width: 54ch;
+  margin-bottom: 2rem;
+}
+
+.svc-detail__label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--grey-text);
+  margin-bottom: 0.75rem;
+}
+
+.svc-detail__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.svc-detail__list li {
+  font-size: 14px;
+  color: var(--grey-dark);
+  padding-left: 1.1rem;
+  position: relative;
+  line-height: 1.55;
+}
+
+.svc-detail__list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+  font-size: 12px;
+}
+
+.svc-detail__forwho {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--grey-dark);
+  max-width: 54ch;
+  padding: 1.25rem 1.5rem;
+  background: var(--grey-soft);
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.svc-detail__caselink {
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 150ms;
+}
+.svc-detail__caselink:hover { color: var(--orange); }
+
+@media (max-width: 900px) {
+  .svc-detail {
+    grid-template-columns: 1fr;
+    direction: ltr !important;
+  }
+  .svc-detail__img { min-height: 280px; order: -1; }
+}
+
+/* ── Perfiles de cliente ─────────────────────────────────────── */
+.profiles {
+  background: var(--grey-soft);
+  padding: 6rem clamp(1rem, 3vw, 2rem);
+}
+
+.profiles__inner {
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.profiles__heading {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 3rem;
+}
+
+.profiles__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.profile-card {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.profile-card__role {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.profile-card__company {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--grey-text);
+  margin-top: 0.35rem;
+}
+
+.profile-card__block h4 {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--grey-text);
+  margin-bottom: 0.4rem;
+}
+
+.profile-card__block p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--grey-dark);
+}
+
+@media (max-width: 900px) {
+  .profiles__grid { grid-template-columns: 1fr; }
+}

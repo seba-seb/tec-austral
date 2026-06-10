@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEC AUSTRAL — Oficina Técnica en Estructuras Metálicas · Barcelona</title>
+  <meta name="description" content="Oficina técnica especializada en estructuras metálicas. Coordinamos fabricación, normativa y obra. BIM, despieces, gestión de proyecto y asesoría UNE EN 1090." />
+  <meta property="og:title" content="TEC AUSTRAL — Oficina Técnica en Estructuras Metálicas · Barcelona" />
+  <meta property="og:description" content="Oficina técnica especializada en estructuras metálicas. Coordinamos fabricación, normativa y obra para que los proyectos avancen." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,300;1,14..32,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ NAV ══════════════════════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__logo" aria-hidden="true">
+          <span class="nav__logo-rect nav__logo-rect--tall"></span>
+          <span class="nav__logo-rect nav__logo-rect--short"></span>
+        </span>
+        TEC AUSTRAL
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="servicios.html" class="nav__link">Servicios</a></li>
+        <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+        <li><a href="casos.html" class="nav__link">Casos</a></li>
+        <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+        <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+      </ul>
+
+      <div class="nav__ctas">
+        <a href="https://wa.me/+34642033304" class="btn btn--fill" target="_blank" rel="noopener">CONTACTAR</a>
+      </div>
+
+      <button class="nav__hamburger" aria-label="Menú" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" data-nav-mobile>
+      <ul role="list">
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="casos.html">Casos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a href="https://wa.me/+34642033304" class="btn btn--fill" target="_blank" rel="noopener" style="width:100%;justify-content:center;">CONTACTAR</a>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ══════════════════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <!-- PLACEHOLDER — foto de obra o detalle metálico, 1440×800px mínimo -->
+      <div class="hero__photo-placeholder" role="img" aria-label="Detalle de estructura metálica en obra"></div>
+    </div>
+    <div class="hero__content">
+      <h1 class="hero__heading">Cuando el proyecto<br>se complica, nosotros<br>lo resolvemos.</h1>
+      <div class="hero__cta-block">
+        <p class="hero__lede">Oficina técnica especializada en estructuras metálicas. Coordinamos fabricación, normativa y obra para que los proyectos avancen.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <a href="https://wa.me/+34642033304" class="btn btn--fill btn--lg" target="_blank" rel="noopener">HABLEMOS DE TU PROYECTO</a>
+          <a href="casos.html" class="btn btn--outline-light btn--lg">VER CASOS REALES</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROPUESTA DE VALOR ════════════════════════════════════════════ -->
+  <section class="valueprops">
+    <div class="valueprops__inner">
+      <div class="valueprops__item">
+        <h2 class="valueprops__title">Nexo entre planos y obra</h2>
+        <p class="valueprops__desc">Detectamos incompatibilidades antes de que lleguen al taller. Resolvemos lo que otros ignoran o dejan para obra.</p>
+      </div>
+      <div class="valueprops__item">
+        <h2 class="valueprops__title">Criterio normativo propio</h2>
+        <p class="valueprops__desc">Conocimiento profundo de UNE EN 1090, CTE y marcado CE. Tu documentación siempre lista, sin sorpresas en auditoría.</p>
+      </div>
+      <div class="valueprops__item">
+        <h2 class="valueprops__title">Coordinación directa</h2>
+        <p class="valueprops__desc">Hablamos con el taller, con el fabricante y con la obra. Tú recibes el reporte, no los problemas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICIOS PREVIEW ═════════════════════════════════════════════ -->
+  <section class="svc-preview" id="servicios">
+    <div class="svc-preview__inner">
+      <div class="svc-preview__header">
+        <h2 class="svc-preview__heading">Lo que hacemos</h2>
+        <a href="servicios.html" class="btn btn--outline-dark">VER TODOS LOS SERVICIOS</a>
+      </div>
+      <div class="svc-preview__grid">
+        <a href="servicios.html#dibujo" class="svc-card">
+          <span class="svc-card__num">01</span>
+          <h3 class="svc-card__title">Dibujo técnico y despieces</h3>
+          <p class="svc-card__desc">Planos pensados para quien fabrica, no solo para quien proyecta.</p>
+          <span class="svc-card__link">VER MÁS</span>
+        </a>
+        <a href="servicios.html#gestion" class="svc-card">
+          <span class="svc-card__num">02</span>
+          <h3 class="svc-card__title">Gestión de proyectos</h3>
+          <p class="svc-card__desc">Coordinación de fases, plazos y actores. Desde el modelo hasta el cierre de obra.</p>
+          <span class="svc-card__link">VER MÁS</span>
+        </a>
+        <a href="servicios.html#normativa" class="svc-card">
+          <span class="svc-card__num">03</span>
+          <h3 class="svc-card__title">Asesoría normativa</h3>
+          <p class="svc-card__desc">UNE EN 1090, FPC, marcado CE, CTE. El cumplimiento que no te roba tiempo.</p>
+          <span class="svc-card__link">VER MÁS</span>
+        </a>
+        <a href="servicios.html#bim" class="svc-card">
+          <span class="svc-card__num">04</span>
+          <h3 class="svc-card__title">Modelado BIM</h3>
+          <p class="svc-card__desc">Documentación integrada y trazable. El modelo que sirve en fabricación, en obra y en auditoría.</p>
+          <span class="svc-card__link">VER MÁS</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MÉTRICAS ══════════════════════════════════════════════════════ -->
+  <section class="stats">
+    <p class="stats__eyebrow">EN NÚMEROS</p>
+    <div class="stats__row">
+      <div class="stats__item">
+        <span class="stats__number">15+</span>
+        <span class="stats__label">PROYECTOS COMPLEJOS<br>EJECUTADOS</span>
+      </div>
+      <div class="stats__divider" aria-hidden="true"></div>
+      <div class="stats__item">
+        <span class="stats__number">10</span>
+        <span class="stats__label">AÑOS EN EL<br>SECTOR</span>
+      </div>
+      <div class="stats__divider" aria-hidden="true"></div>
+      <div class="stats__item">
+        <span class="stats__number">98%</span>
+        <span class="stats__label">CLIENTES<br>SATISFECHOS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CASOS DESTACADOS ══════════════════════════════════════════════ -->
+  <section class="projects" id="casos">
+    <div class="projects__header">
+      <h2 class="projects__heading">Problemas que<br>ya resolvimos.</h2>
+    </div>
+    <div class="projects__track" role="list">
+
+      <article class="project-card" role="listitem">
+        <div class="project-card__img project-card__img--1"></div>
+        <div class="project-card__info">
+          <span class="project-card__num">01 · PEQUEÑA ESCALA</span>
+          <h3 class="project-card__title">Escalera Estel</h3>
+          <p class="project-card__meta">Cuando proyecto y realidad no coinciden, rediseñamos para construir.</p>
+          <a href="casos/estel.html" class="project-card__link">VER CASO</a>
+        </div>
+      </article>
+
+      <article class="project-card" role="listitem">
+        <div class="project-card__img project-card__img--2"></div>
+        <div class="project-card__info">
+          <span class="project-card__num">02 · MEDIANA ESCALA</span>
+          <h3 class="project-card__title">Extensión de balcones<br>— Edificio FE</h3>
+          <p class="project-card__meta">Detectar un error antes de fabricar evita un coste después.</p>
+          <a href="casos/fe.html" class="project-card__link">VER CASO</a>
+        </div>
+      </article>
+
+      <article class="project-card" role="listitem">
+        <div class="project-card__img project-card__img--3"></div>
+        <div class="project-card__info">
+          <span class="project-card__num">03 · GRAN ESCALA</span>
+          <h3 class="project-card__title">Estadio de referencia<br>en Barcelona</h3>
+          <p class="project-card__meta">En proyectos de gran escala, la organización técnica también es ingeniería.</p>
+          <a href="casos/estadio.html" class="project-card__link">VER CASO</a>
+        </div>
+      </article>
+
+      <article class="project-card" role="listitem">
+        <div class="project-card__img project-card__img--4"></div>
+        <div class="project-card__info">
+          <span class="project-card__num">04 · INTERNACIONAL</span>
+          <h3 class="project-card__title">Ascensor y pasarela<br>— Mónaco</h3>
+          <p class="project-card__meta">Precisión técnica sin fronteras.</p>
+          <a href="casos/monaco.html" class="project-card__link">VER CASO</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══ EQUIPO PREVIEW ════════════════════════════════════════════════ -->
+  <section class="team">
+    <div class="team__inner">
+      <div class="team__header">
+        <h2 class="team__heading">El equipo</h2>
+        <a href="nosotros.html" class="btn btn--outline-dark">CONOCE EL EQUIPO COMPLETO</a>
+      </div>
+      <div class="team__grid">
+        <article class="team-card">
+          <!-- PLACEHOLDER — 400×400px, fondo neutro -->
+          <div class="team-card__photo" role="img" aria-label="Retrato de Tamara Bayona"></div>
+          <h3 class="team-card__name">Tamara Bayona</h3>
+          <p class="team-card__role">Dirección y Gestión de Proyectos</p>
+          <p class="team-card__bio">Especialista en calidad y sistemas integrados con experiencia en proyectos de estructura metálica de gran escala.</p>
+        </article>
+        <article class="team-card">
+          <!-- PLACEHOLDER — 400×400px, fondo neutro -->
+          <div class="team-card__photo" role="img" aria-label="Retrato de Milagros Bogado"></div>
+          <h3 class="team-card__name">Milagros Bogado</h3>
+          <p class="team-card__role">Arquitectura y Planificación</p>
+          <p class="team-card__bio">Arquitecta especializada en planificación y coordinación técnica en obras civiles de referencia.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA FINAL ══════════════════════════════════════════════════════ -->
+  <section class="about-cta" id="contacto">
+    <div class="about-cta__inner">
+      <div class="about-cta__text">
+        <h2 class="about-cta__heading">¿Tienes un proyecto<br>con problemas técnicos?</h2>
+        <p class="about-cta__sub">Cuéntanos qué está pasando. Sin compromiso.</p>
+      </div>
+      <a href="https://wa.me/+34642033304" class="btn btn--fill btn--lg" target="_blank" rel="noopener">ESCRIBINOS POR WHATSAPP</a>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__col">
+        <span class="footer__col-label">TEC AUSTRAL</span>
+        <p style="font-size:14px;color:rgba(255,255,255,0.65);line-height:1.6;">Oficina técnica especializada en estructuras metálicas. Barcelona.</p>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">NAVEGACIÓN</span>
+        <a href="servicios.html">Servicios</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="casos.html">Casos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">CONTACTO</span>
+        <a href="tel:+34642033304">+34 642 033 304</a>
+        <a href="mailto:tbayona@tecaustral.com">tbayona@tecaustral.com</a>
+        <a href="mailto:comercial@tecaustral.com">comercial@tecaustral.com</a>
+        <address>Carrer de Diputació 122<br>08015 Eixample, Barcelona</address>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">LEGAL</span>
+        <a href="#">Aviso Legal</a>
+        <a href="#">Política de Privacidad</a>
+      </div>
+    </div>
+
+    <div class="footer__wordmark-row">
+      <span class="footer__logo" aria-hidden="true">
+        <span class="footer__logo-rect footer__logo-rect--tall"></span>
+        <span class="footer__logo-rect footer__logo-rect--short"></span>
+      </span>
+      <span class="footer__wordmark">TEC AUSTRAL</span>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; 2026 TEC AUSTRAL · Todos los derechos reservados</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

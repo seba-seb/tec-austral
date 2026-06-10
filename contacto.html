@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto · TEC AUSTRAL</title>
+  <meta name="description" content="Hablemos de tu proyecto. TEC AUSTRAL — Barcelona." />
+  <meta property="og:title" content="Contacto · TEC AUSTRAL" />
+  <meta property="og:description" content="Hablemos de tu proyecto. TEC AUSTRAL — Barcelona." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,700;0,14..32,800;0,14..32,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ NAV ══════════════════════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__logo" aria-hidden="true">
+          <span class="nav__logo-rect nav__logo-rect--tall"></span>
+          <span class="nav__logo-rect nav__logo-rect--short"></span>
+        </span>
+        TEC AUSTRAL
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="servicios.html" class="nav__link">Servicios</a></li>
+        <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+        <li><a href="casos.html" class="nav__link">Casos</a></li>
+        <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+        <li><a href="contacto.html" class="nav__link" aria-current="page">Contacto</a></li>
+      </ul>
+      <div class="nav__ctas">
+        <a href="https://wa.me/+34642033304" class="btn btn--fill" target="_blank" rel="noopener">CONTACTAR</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Menú" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" data-nav-mobile>
+      <ul role="list">
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="casos.html">Casos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a href="https://wa.me/+34642033304" class="btn btn--fill" target="_blank" rel="noopener" style="width:100%;justify-content:center;">CONTACTAR</a>
+    </div>
+  </nav>
+
+  <!-- ═══ INTRO ══════════════════════════════════════════════════════════ -->
+  <header class="page-header">
+    <div class="page-header__inner">
+      <h1 class="page-header__title">Hablemos<br>de tu proyecto.</h1>
+      <p class="page-header__lede">Si tienes un problema técnico en obra o en fabricación, cuéntanos qué está pasando. Sin formularios eternos.</p>
+    </div>
+  </header>
+
+  <!-- ═══ FORMULARIO + DATOS ═════════════════════════════════════════════ -->
+  <section class="contact-cta" id="contacto" style="border-bottom:1px solid var(--grey-mid);">
+    <div class="contact-cta__inner">
+      <div class="contact-cta__form">
+        <form action="mailto:tbayona@tecaustral.com" method="POST" enctype="text/plain">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="nombre">NOMBRE *</label>
+              <input type="text" id="nombre" name="nombre" required autocomplete="name" />
+            </div>
+            <div class="form-field">
+              <label for="empresa">EMPRESA</label>
+              <input type="text" id="empresa" name="empresa" autocomplete="organization" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field" style="grid-column: 1 / -1;">
+              <label for="email">EMAIL *</label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="mensaje">CUÉNTANOS EL PROYECTO O EL PROBLEMA *</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--fill btn--lg">ENVIAR</button>
+          <p style="margin-top:1.5rem;font-size:14px;color:var(--grey-dark);">
+            O si prefieres, <a href="https://wa.me/+34642033304" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:3px;font-weight:600;">escríbenos directamente por WhatsApp →</a>
+          </p>
+        </form>
+        <div class="contact-cta__info">
+          <div class="contact-info-item">
+            <span class="contact-info-label">TELÉFONO / WHATSAPP</span>
+            <a href="tel:+34642033304">+34 642 033 304</a>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-label">EMAIL GENERAL</span>
+            <a href="mailto:tbayona@tecaustral.com">tbayona@tecaustral.com</a>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-label">EMAIL COMERCIAL</span>
+            <a href="mailto:comercial@tecaustral.com">comercial@tecaustral.com</a>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-label">DIRECCIÓN</span>
+            <address>Carrer de Diputació 122<br>08015 Eixample, Barcelona</address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__col">
+        <span class="footer__col-label">TEC AUSTRAL</span>
+        <p style="font-size:14px;color:rgba(255,255,255,0.65);line-height:1.6;">Oficina técnica especializada en estructuras metálicas. Barcelona.</p>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">NAVEGACIÓN</span>
+        <a href="servicios.html">Servicios</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="casos.html">Casos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">CONTACTO</span>
+        <a href="tel:+34642033304">+34 642 033 304</a>
+        <a href="mailto:tbayona@tecaustral.com">tbayona@tecaustral.com</a>
+        <a href="mailto:comercial@tecaustral.com">comercial@tecaustral.com</a>
+        <address>Carrer de Diputació 122<br>08015 Eixample, Barcelona</address>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">LEGAL</span>
+        <a href="#">Aviso Legal</a>
+        <a href="#">Política de Privacidad</a>
+      </div>
+    </div>
+    <div class="footer__wordmark-row">
+      <span class="footer__logo" aria-hidden="true">
+        <span class="footer__logo-rect footer__logo-rect--tall"></span>
+        <span class="footer__logo-rect footer__logo-rect--short"></span>
+      </span>
+      <span class="footer__wordmark">TEC AUSTRAL</span>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 TEC AUSTRAL · Todos los derechos reservados</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

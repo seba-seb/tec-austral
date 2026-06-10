@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios · TEC AUSTRAL</title>
+  <meta name="description" content="Dibujo técnico, gestión de proyectos, asesoría normativa UNE EN 1090 y modelado BIM para estructuras metálicas en Barcelona y Cataluña." />
+  <meta property="og:title" content="Servicios · TEC AUSTRAL" />
+  <meta property="og:description" content="Dibujo técnico, gestión de proyectos, asesoría normativa UNE EN 1090 y modelado BIM para estructuras metálicas en Barcelona y Cataluña." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,700;0,14..32,800;0,14..32,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="servicios.css" />
+</head>
+<body>
+
+  <!-- ═══ NAV ══════════════════════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__logo" aria-hidden="true">
+          <span class="nav__logo-rect nav__logo-rect--tall"></span>
+          <span class="nav__logo-rect nav__logo-rect--short"></span>
+        </span>
+        TEC AUSTRAL
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="servicios.html" class="nav__link" aria-current="page">Servicios</a></li>
+        <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+        <li><a href="casos.html" class="nav__link">Casos</a></li>
+        <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+        <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+      </ul>
+      <div class="nav__ctas">
+        <a href="https://wa.me/+34642033304" class="btn btn--fill" target="_blank" rel="noopener">CONTACTAR</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Menú" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" data-nav-mobile>
+      <ul role="list">
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="casos.html">Casos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a href="https://wa.me/+34642033304" class="btn btn--fill" target="_blank" rel="noopener" style="width:100%;justify-content:center;">CONTACTAR</a>
+    </div>
+  </nav>
+
+  <!-- ═══ INTRO ══════════════════════════════════════════════════════════ -->
+  <header class="page-header">
+    <div class="page-header__inner">
+      <h1 class="page-header__title">Servicios técnicos<br>especializados en<br>estructura metálica.</h1>
+      <p class="page-header__lede">No somos un estudio de arquitectura ni una empresa de construcción. Somos la oficina técnica que opera entre los dos: resolvemos lo que se pierde en la coordinación, lo que nadie documentó bien y lo que el taller no sabe cómo fabricar. Trabajamos B2B con constructoras, estudios y directores técnicos que necesitan un interlocutor con criterio propio.</p>
+    </div>
+  </header>
+
+  <!-- ═══ SERVICIOS ══════════════════════════════════════════════════════ -->
+  <section class="svc-list">
+
+    <!-- 01 Dibujo técnico -->
+    <article class="svc-detail" id="dibujo">
+      <div class="svc-detail__body">
+        <span class="svc-detail__num">01</span>
+        <h2 class="svc-detail__title">Dibujo técnico<br>y despieces</h2>
+        <p class="svc-detail__desc">Elaboramos planos de estructura, despieces de fabricación y documentación as-built. Nuestros planos están pensados para el operario que va a fabricar, no solo para el cliente que va a aprobar. Verificamos que la geometría cuadra con la obra real antes de que llegue al taller.</p>
+        <span class="svc-detail__label">INCLUYE</span>
+        <ul class="svc-detail__list">
+          <li>Planos de estructura y detalle</li>
+          <li>Despieces de fabricación con tipología de uniones</li>
+          <li>Ajuste geométrico conforme a cotas de obra</li>
+          <li>Definición de soldaduras según CTE</li>
+          <li>Documentación as-built</li>
+        </ul>
+        <p class="svc-detail__forwho"><strong>¿Para quién?</strong> Constructoras y talleres de estructura metálica que reciben planos con incompatibilidades o que necesitan el despiece listo para fabricar.</p>
+        <a href="casos.html#estel" class="svc-detail__caselink">VER CASO RELACIONADO → ESCALERA ESTEL</a>
+      </div>
+      <div class="svc-detail__img svc-detail__img--1" role="img" aria-label="Placeholder: detalle de despiece de fabricación"></div>
+    </article>
+
+    <!-- 02 Gestión -->
+    <article class="svc-detail svc-detail--reverse" id="gestion">
+      <div class="svc-detail__body">
+        <span class="svc-detail__num">02</span>
+        <h2 class="svc-detail__title">Gestión<br>de proyectos</h2>
+        <p class="svc-detail__desc">Coordinamos todas las fases del proyecto: desde la revisión del modelo hasta el cierre en obra. Actuamos como nexo entre el estudio, el fabricante y la obra, asegurándonos de que la información llega a quien la necesita, cuando la necesita y en el formato correcto.</p>
+        <span class="svc-detail__label">INCLUYE</span>
+        <ul class="svc-detail__list">
+          <li>Coordinación técnica entre estudio, taller y obra</li>
+          <li>Control de plazos y detección de desviaciones</li>
+          <li>Gestión de incompatibilidades</li>
+          <li>Informes de seguimiento sin necesidad de solicitud</li>
+          <li>Acompañamiento en reuniones de coordinación</li>
+        </ul>
+        <p class="svc-detail__forwho"><strong>¿Para quién?</strong> Directores técnicos que gestionan 3 o más proyectos simultáneos y no pueden estar al detalle en cada uno. Constructoras que necesitan un responsable técnico externo con conocimiento del sector.</p>
+        <a href="casos.html#estadio" class="svc-detail__caselink">VER CASO RELACIONADO → ESTADIO DE REFERENCIA</a>
+      </div>
+      <div class="svc-detail__img svc-detail__img--2" role="img" aria-label="Placeholder: coordinación técnica en obra"></div>
+    </article>
+
+    <!-- 03 Normativa -->
+    <article class="svc-detail" id="normativa">
+      <div class="svc-detail__body">
+        <span class="svc-detail__num">03</span>
+        <h2 class="svc-detail__title">Asesoría<br>normativa</h2>
+        <p class="svc-detail__desc">Ayudamos a empresas del sector a mantener el cumplimiento normativo sin que sea una carga operativa. Desde el control de producción en fábrica (FPC) hasta la trazabilidad exigida por la UNE EN 1090. Cuando llega una auditoría, tienes todo en orden.</p>
+        <span class="svc-detail__label">INCLUYE</span>
+        <ul class="svc-detail__list">
+          <li>Asesoría UNE EN 1090 y marcado CE</li>
+          <li>Control de Producción en Fábrica (FPC)</li>
+          <li>Trazabilidad documental de producción</li>
+          <li>Gestión de certificaciones y registros</li>
+          <li>Preparación para auditorías</li>
+        </ul>
+        <p class="svc-detail__forwho"><strong>¿Para quién?</strong> Empresas certificadas UNE EN 1090 que necesitan mantener el FPC al día sin dedicar recursos internos exclusivos a ello.</p>
+      </div>
+      <div class="svc-detail__img svc-detail__img--3" role="img" aria-label="Placeholder: documentación normativa de fabricación"></div>
+    </article>
+
+    <!-- 04 BIM -->
+    <article class="svc-detail svc-detail--reverse" id="bim">
+      <div class="svc-detail__body">
+        <span class="svc-detail__num">04</span>
+        <h2 class="svc-detail__title">Modelado<br>BIM</h2>
+        <p class="svc-detail__desc">Desarrollamos y coordinamos modelos BIM aplicados a estructura metálica. No solo modelamos: aseguramos que el modelo sirva en todas las fases, desde el diseño hasta la fabricación y la obra. Integramos automatización de procesos e inteligencia artificial donde añade valor real.</p>
+        <span class="svc-detail__label">INCLUYE</span>
+        <ul class="svc-detail__list">
+          <li>Modelado BIM de estructura metálica</li>
+          <li>Coordinación de modelos multidisciplinares</li>
+          <li>Detección de colisiones</li>
+          <li>Extracción de cuantificaciones y despieces desde modelo</li>
+          <li>Documentación as-built BIM</li>
+        </ul>
+        <p class="svc-detail__forwho"><strong>¿Para quién?</strong> Estudios y constructoras que trabajan en entorno BIM o que necesitan implementarlo en proyectos con componente metálica.</p>
+      </div>
+      <div class="svc-detail__img svc-detail__img--4" role="img" aria-label="Placeholder: modelo BIM de estructura metálica"></div>
+    </article>
+
+  </section>
+
+  <!-- ═══ PARA QUIÉN ═════════════════════════════════════════════════════ -->
+  <section class="profiles">
+    <div class="profiles__inner">
+      <h2 class="profiles__heading">¿Para quién trabajamos?</h2>
+      <div class="profiles__grid">
+
+        <article class="profile-card">
+          <div>
+            <h3 class="profile-card__role">Director Técnico</h3>
+            <p class="profile-card__company">Constructora mediana-grande</p>
+          </div>
+          <div class="profile-card__block">
+            <h4>EL PROBLEMA</h4>
+            <p>Demasiados proyectos simultáneos, no puede estar al detalle en cada uno.</p>
+          </div>
+          <div class="profile-card__block">
+            <h4>CÓMO AYUDAMOS</h4>
+            <p>Nos hacemos cargo de la coordinación técnica y le reportamos sin que tenga que preguntar.</p>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <div>
+            <h3 class="profile-card__role">Estudio de Arquitectura</h3>
+            <p class="profile-card__company">Estudio con proyectos que incluyen estructura metálica</p>
+          </div>
+          <div class="profile-card__block">
+            <h4>EL PROBLEMA</h4>
+            <p>No tienen expertise interno en estructura metálica ni en normativa de fabricación.</p>
+          </div>
+          <div class="profile-card__block">
+            <h4>CÓMO AYUDAMOS</h4>
+            <p>Actuamos como su brazo técnico especializado, sin que tengan que contratar un recurso fijo.</p>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <div>
+            <h3 class="profile-card__role">Empresa de construcción metálica</h3>
+            <p class="profile-card__company">Taller o fabricante de estructura metálica</p>
+          </div>
+          <div class="profile-card__block">
+            <h4>EL PROBLEMA</h4>
+            <p>Reciben planos que no están pensados para fabricar y tienen que interpretar demasiado.</p>
+          </div>
+          <div class="profile-card__block">
+            <h4>CÓMO AYUDAMOS</h4>
+            <p>Producimos los despieces y la documentación técnica que necesitan para fabricar sin ambigüedades.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA ════════════════════════════════════════════════════════════ -->
+  <section class="about-cta">
+    <div class="about-cta__inner">
+      <div class="about-cta__text">
+        <h2 class="about-cta__heading">¿No sabes cuál es el<br>servicio que necesitas?</h2>
+        <p class="about-cta__sub">Cuéntanos el problema. Nosotros identificamos dónde intervenir.</p>
+      </div>
+      <a href="https://wa.me/+34642033304" class="btn btn--fill btn--lg" target="_blank" rel="noopener">HABLEMOS</a>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__col">
+        <span class="footer__col-label">TEC AUSTRAL</span>
+        <p style="font-size:14px;color:rgba(255,255,255,0.65);line-height:1.6;">Oficina técnica especializada en estructuras metálicas. Barcelona.</p>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">NAVEGACIÓN</span>
+        <a href="servicios.html">Servicios</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="casos.html">Casos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">CONTACTO</span>
+        <a href="tel:+34642033304">+34 642 033 304</a>
+        <a href="mailto:tbayona@tecaustral.com">tbayona@tecaustral.com</a>
+        <a href="mailto:comercial@tecaustral.com">comercial@tecaustral.com</a>
+        <address>Carrer de Diputació 122<br>08015 Eixample, Barcelona</address>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label">LEGAL</span>
+        <a href="#">Aviso Legal</a>
+        <a href="#">Política de Privacidad</a>
+      </div>
+    </div>
+    <div class="footer__wordmark-row">
+      <span class="footer__logo" aria-hidden="true">
+        <span class="footer__logo-rect footer__logo-rect--tall"></span>
+        <span class="footer__logo-rect footer__logo-rect--short"></span>
+      </span>
+      <span class="footer__wordmark">TEC AUSTRAL</span>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 TEC AUSTRAL · Todos los derechos reservados</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
