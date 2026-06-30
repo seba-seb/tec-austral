@@ -209,16 +209,16 @@ address { font-style: normal; }
 .hero__photo-placeholder {
   width: 100%;
   height: 100%;
-  /* Beautiful gradient simulating a construction site at dusk */
   background:
     linear-gradient(
       160deg,
-      oklch(22% 0.03 240) 0%,
-      oklch(18% 0.02 30) 35%,
-      oklch(40% 0.12 45) 60%,
-      oklch(65% 0.15 55) 80%,
-      oklch(75% 0.12 70) 100%
-    );
+      oklch(22% 0.03 240 / 0.5) 0%,
+      oklch(18% 0.02 30 / 0.5) 35%,
+      oklch(40% 0.12 45 / 0.5) 60%,
+      oklch(65% 0.15 55 / 0.5) 80%,
+      oklch(75% 0.12 70 / 0.5) 100%
+    ),
+    url('public/hero.avif') center / cover no-repeat;
 }
 /* SVG crane silhouette overlay */
 .hero__photo-placeholder::after {
@@ -228,7 +228,7 @@ address { font-style: normal; }
   background:
     /* Silhouette layer */
     linear-gradient(to top, oklch(10% 0.01 240) 0%, transparent 45%),
-    linear-gradient(to bottom, transparent 40%, oklch(10% 0.01 240 / 0.2) 100%);
+    linear-gradient(to bottom, transparent 40%, oklch(10% 0.01 240 / 0.5) 100%);
 }
 
 .hero__content {
@@ -390,10 +390,10 @@ address { font-style: normal; }
 
 /* Placeholder gradients — replace with real photos */
 .project-card__img--1 {
-  background: linear-gradient(145deg, oklch(30% 0.04 220) 0%, oklch(50% 0.10 55) 100%);
+  background: url('public/Edificio-estel1.avif') center/cover no-repeat;
 }
 .project-card__img--2 {
-  background: linear-gradient(145deg, oklch(25% 0.03 30) 0%, oklch(55% 0.12 50) 100%);
+  background: url('public/edificio-fabiola1.avif') center/cover no-repeat;
 }
 .project-card__img--3 {
   background: linear-gradient(145deg, oklch(28% 0.04 250) 0%, oklch(45% 0.08 60) 100%);
@@ -930,14 +930,6 @@ address { font-style: normal; }
 .footer__col a:hover { color: var(--white); }
 
 /* Giant wordmark */
-.footer__wordmark-row {
-  max-width: 1400px;
-  margin-inline: auto;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  padding-block: 3rem 2rem;
-}
 
 .footer__logo {
   display: flex;
@@ -949,8 +941,6 @@ address { font-style: normal; }
   background: var(--white);
   border-radius: 3px;
 }
-.footer__logo-rect--tall { width: 22px; height: 44px; }
-.footer__logo-rect--short { width: 22px; height: 28px; }
 
 .footer__wordmark {
   font-size: clamp(3rem, 10vw, 10rem);
@@ -1155,10 +1145,12 @@ address { font-style: normal; }
 
 .team-card__photo {
   flex-shrink: 0;
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 140px;
   border-radius: 8px;
   background: linear-gradient(145deg, oklch(88% 0.005 80) 0%, oklch(80% 0.01 70) 100%);
+  background-size: cover;
+  background-position: center;
 }
 
 /* foto cuadrada más grande en nosotros.html */
@@ -1309,4 +1301,9 @@ address { font-style: normal; }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   * { transition-duration: 1ms !important; }
+}
+
+.footer__wordmark-row {
+  max-width: 1440px;
+  margin: auto;
 }
