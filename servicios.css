@@ -23,10 +23,10 @@
   min-height: 100%;
 }
 
-.svc-detail__img--1 { background: linear-gradient(145deg, oklch(30% 0.04 220) 0%, oklch(52% 0.12 50) 100%); }
-.svc-detail__img--2 { background: linear-gradient(145deg, oklch(25% 0.03 30) 0%, oklch(55% 0.12 50) 100%); }
-.svc-detail__img--3 { background: linear-gradient(145deg, oklch(28% 0.04 250) 0%, oklch(45% 0.08 60) 100%); }
-.svc-detail__img--4 { background: linear-gradient(145deg, oklch(22% 0.02 200) 0%, oklch(40% 0.08 210) 100%); }
+.svc-detail__img--1 { background: linear-gradient(145deg, oklch(30% 0.04 220 / 0.5) 0%, oklch(52% 0.12 50 / 0.5) 100%), url('../public/dibujo.avif') center/cover no-repeat; }
+.svc-detail__img--2 { background: linear-gradient(145deg, oklch(25% 0.03 30 / 0.5) 0%, oklch(55% 0.12 50 / 0.5) 100%), url('../public/gestion.avif') center/cover no-repeat; }
+.svc-detail__img--3 { background: linear-gradient(145deg, oklch(28% 0.04 250 / 0.5) 0%, oklch(45% 0.08 60 / 0.5) 100%), url('../public/asesoria.avif') center/cover no-repeat; }
+.svc-detail__img--4 { background: linear-gradient(145deg, oklch(22% 0.02 200 / 0.5) 0%, oklch(40% 0.08 210 / 0.5) 100%), url('../public/bim.avif') center/cover no-repeat; }
 
 .svc-detail__body {
   padding: 4rem clamp(2rem, 4vw, 4rem);
