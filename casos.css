@@ -146,3 +146,71 @@
 @media (max-width: 1000px) {
   .caso__grid { grid-template-columns: 1fr; gap: 2.5rem; }
 }
+
+/* ── Cabecera de página y banda CTA (antes en style.css) ───── */
+/* ── CTA BAND (negro, compartido) ────────────────────────────── */
+.about-cta {
+  background: var(--black);
+  color: var(--white);
+  padding: 6rem clamp(1rem, 3vw, 2rem);
+}
+
+.about-cta__inner {
+  max-width: 1400px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-cta__heading {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.about-cta__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-cta__sub {
+  font-size: 15px;
+  color: rgba(255,255,255,0.65);
+}
+
+@media (max-width: 768px) {
+  .about-cta__inner { flex-direction: column; align-items: flex-start; }
+}
+
+/* ── PAGE HEADER (interiores) ────────────────────────────────── */
+.page-header {
+  padding: calc(var(--nav-h) + 4rem) clamp(1rem, 3vw, 2rem) 4rem;
+  background: var(--white);
+}
+
+.page-header__inner {
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.page-header__title {
+  font-size: clamp(2.5rem, 6vw, 6rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+  overflow-wrap: anywhere;
+}
+
+.page-header__lede {
+  font-size: clamp(15px, 1.4vw, 18px);
+  line-height: 1.7;
+  color: var(--grey-dark);
+  max-width: 62ch;
+}
+

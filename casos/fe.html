@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edificio Fabiola — Tarragona — Balcones · TEC AUSTRAL</title>
-  <meta name="description" content="Revisión técnica planta a planta, redimensionamiento de uniones y ajuste a micropilotes en obra. Caso real TEC AUSTRAL." />
+  <meta name="description" content="Revisión técnica planta a planta, redimensionamiento de uniones y ajuste a micropilotes en obra. Trabajo de TEC AUSTRAL." />
   <meta property="og:title" content="Edificio Fabiola — Tarragona — Balcones · TEC AUSTRAL" />
-  <meta property="og:description" content="Revisión técnica planta a planta, redimensionamiento de uniones y ajuste a micropilotes en obra. Caso real TEC AUSTRAL." />
+  <meta property="og:description" content="Revisión técnica planta a planta, redimensionamiento de uniones y ajuste a micropilotes en obra. Trabajo de TEC AUSTRAL." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="../public/edificio-fabiola1.avif" />
   <link rel="icon" type="image/png" href="../public/favicon.png" />
@@ -14,34 +14,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,700;0,14..32,800;0,14..32,900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="../proyectos/proyecto.css" />
+  <link rel="stylesheet" href="caso.css" />
 </head>
 <body>
 
+  <!-- ═══ NAV (un solo menú: en móvil se despliega el mismo) ═══════════ -->
   <nav class="nav" id="nav">
     <div class="nav__inner">
-      <a href="../index.html" class="nav__brand">
-        TEC AUSTRAL
-      </a>
-      <ul class="nav__links" role="list">
-        <li><a href="../servicios.html" class="nav__link">Servicios</a></li>
-        <li><a href="../casos.html" class="nav__link" aria-current="page">Casos</a></li>
-        <li><a href="../nosotros.html" class="nav__link">Nosotros</a></li>
+      <a href="../index.html" class="nav__brand">TEC AUSTRAL</a>
+
+      <ul class="nav__links" role="list" id="nav-menu">
+        <li><a href="../index.html#servicios" class="nav__link">Servicios</a></li>
+        <li><a href="../casos.html" class="nav__link" aria-current="page">Trabajos</a></li>
+        <li><a href="../index.html#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="../index.html#contacto" class="nav__link">Contacto</a></li>
       </ul>
+
       <div class="nav__ctas">
-        <a href="https://wa.link/9e8n7b" class="btn btn--fill" target="_blank" rel="noopener">CONTACTAR</a>
+        <a href="https://wa.link/9e8n7b" class="btn btn--fill" target="_blank" rel="noopener">WHATSAPP</a>
       </div>
-      <button class="nav__hamburger" aria-label="Menú" aria-expanded="false" data-nav-toggle>
+
+      <button class="nav__hamburger" aria-label="Menú" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
         <span></span><span></span>
       </button>
-    </div>
-    <div class="nav__mobile" data-nav-mobile>
-      <ul role="list">
-        <li><a href="../servicios.html">Servicios</a></li>
-        <li><a href="../casos.html">Casos</a></li>
-        <li><a href="../nosotros.html">Nosotros</a></li>
-      </ul>
-      <a href="https://wa.link/9e8n7b" class="btn btn--fill" target="_blank" rel="noopener" style="width:100%;justify-content:center;">CONTACTAR</a>
     </div>
   </nav>
 
@@ -149,7 +144,7 @@
 
   <section class="pdet-more">
     <div class="pdet-more__inner">
-      <h2 class="pdet-more__heading">Más casos</h2>
+      <h2 class="pdet-more__heading">Más trabajos</h2>
       <div class="pdet-more__grid">
         <a href="estel.html" class="pdet-more__card">
           <div class="pdet-more__img pdet-more__img--1" role="img" aria-label="Edificio Estel" style="background: url('../public/Edificio-estel1.avif') center/cover no-repeat"></div>
@@ -165,30 +160,23 @@
 
   <footer class="footer">
     <div class="footer__top">
-      <div class="footer__col hide">
-        <span class="footer__col-label">TEC AUSTRAL</span>
-        <p style="font-size:14px;color:rgba(255,255,255,0.65);line-height:1.6;">Oficina técnica especializada en estructuras metálicas. Barcelona.</p>
-      </div>
-      <div class="footer__col hide">
+      <div class="footer__col">
         <span class="footer__col-label">NAVEGACIÓN</span>
-        <a href="../servicios.html">Servicios</a>
-        <a href="../casos.html">Casos</a>
-        <a href="../nosotros.html">Nosotros</a>
+        <a href="../index.html#servicios">Servicios</a>
+        <a href="../casos.html">Trabajos</a>
+        <a href="../index.html#nosotros">Nosotros</a>
+        <a href="../index.html#contacto">Contacto</a>
       </div>
-      <div class="footer__col hide">
+      <div class="footer__col">
         <span class="footer__col-label">CONTACTO</span>
         <a href="tel:+34642033304">+34 642 033 304</a>
-        <a href="mailto:tbayona@tecaustral.com">tbayona@tecaustral.com</a>
-        <address>Carrer de Diputació 122<br>08015 Eixample, Barcelona</address>
+        <a href="mailto:comercial@tecaustral.com">comercial@tecaustral.com</a>
+        <address>Carrer de Diputació 122<br>08015 Barcelona</address>
       </div>
     </div>
-    <div class="footer__wordmark-row">
-      <span class="footer__logo" aria-hidden="true">
-        <span class="footer__logo-rect footer__logo-rect--tall"></span>
-        <span class="footer__logo-rect footer__logo-rect--short"></span>
-      </span>
-      <span class="footer__wordmark">TEC AUSTRAL</span>
-    </div>
+
+    <p class="footer__wordmark" aria-hidden="true">TEC AUSTRAL</p>
+
     <div class="footer__bottom">
       <span>&copy; 2026 TEC AUSTRAL · Todos los derechos reservados</span>
     </div>
