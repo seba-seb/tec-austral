@@ -1,3 +1,35 @@
 {
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/servicios(.html)?",
+      "destination": "/#servicios",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio(.html)?",
+      "destination": "/casos.html",
+      "permanent": true
+    },
+    {
+      "source": "/proyectos(.html)?",
+      "destination": "/casos.html",
+      "permanent": true
+    },
+    {
+      "source": "/proyectos/:slug*",
+      "destination": "/casos.html",
+      "permanent": true
+    },
+    {
+      "source": "/nosotros(.html)?",
+      "destination": "/#nosotros",
+      "permanent": true
+    },
+    {
+      "source": "/contacto(.html)?",
+      "destination": "/#contacto",
+      "permanent": true
+    }
+  ]
 }

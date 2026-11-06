@@ -56,7 +56,12 @@ Regla: el naranja aparece en ≤ 3 % de la superficie. Nunca como fondo de secci
 - Tono: directo, técnico, sin "calidad" ni "innovación" sueltas. Lector: ingeniero/arquitecto técnico.
 - Imágenes: hasta recibir fotos reales, placeholders con gradientes OKLCH oscuros tierra/azulados (145°) que evocan obra metálica al atardecer.
 - El estadio de Barcelona se referencia como "estadio de fútbol de referencia en Barcelona" (sin nombre, restricción contractual).
-- Copys de botones: uppercase, verbo directo ("HABLEMOS DE TU PROYECTO", "VER CASOS REALES").
+- Copys de botones: uppercase, verbo directo ("CUÉNTANOS TU CASO", "VER TRABAJOS"). Español de España (tuteo, sin voseo).
 
-## 8. Mapa de páginas
-`index.html` (Home) · `servicios.html` · `portfolio.html` (grid con filtros) · `casos.html` (5 casos reales: estel, fe, estadio, monaco, bunker) · `nosotros.html` (About) · `contacto.html`. Nav global: Servicios · Portfolio · Casos · Nosotros · Contacto + CTA WhatsApp (`https://wa.me/+34642033304`).
+## 8. Mapa del sitio
+Home (`index.html`) con anclas: `#servicios` · `#como-trabajamos` · `#trabajos` (resumen) · `#nosotros` · `#contacto`.
+Trabajos: `casos.html` (listado) + detalle por trabajo en `casos/*.html` (estilos en `casos.css` y `casos/caso.css`). Para sumar uno: copiar un detalle, añadirlo al listado y a la sección `#trabajos` de la home.
+Las URLs viejas (`servicios.html`, `nosotros.html`, `contacto.html`, `portfolio.html`, `proyectos/*`) redirigen desde `vercel.json`.
+Menú: Servicios · Trabajos (→ `casos.html`) · Nosotros · Contacto + CTA WhatsApp (`https://wa.link/9e8n7b`).
+Formulario de contacto → `api/contact.mjs` (Resend). Variables en Vercel: `RESEND_API_KEY`, `CONTACT_FROM`, `CONTACT_TO` (opcional). Check: `node test/contact.test.mjs`.
+Enfoque (brief nov. 2026): soluciones técnicas de obra y dibujo técnico. No mencionar asesoría, consultoría, auditoría, normativa ni marcado CE.

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Casos · TEC AUSTRAL</title>
-  <meta name="description" content="Casos reales de intervención técnica en obra: qué encontramos, qué hicimos y qué resultados obtuvimos." />
-  <meta property="og:title" content="Casos · TEC AUSTRAL" />
-  <meta property="og:description" content="Casos reales de intervención técnica en obra: qué encontramos, qué hicimos y qué resultados obtuvimos." />
+  <title>Trabajos · TEC AUSTRAL</title>
+  <meta name="description" content="Trabajos de dibujo técnico, despieces y soluciones de obra: qué encontramos, qué hicimos y qué resultado obtuvimos." />
+  <meta property="og:title" content="Trabajos · TEC AUSTRAL" />
+  <meta property="og:description" content="Trabajos de dibujo técnico, despieces y soluciones de obra: qué encontramos, qué hicimos y qué resultado obtuvimos." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="public/hero.avif" />
   <link rel="icon" type="image/png" href="public/favicon.png" />
@@ -18,44 +18,38 @@
 </head>
 <body>
 
-  <!-- ═══ NAV ══════════════════════════════════════════════════════════ -->
+  <!-- ═══ NAV (un solo menú: en móvil se despliega el mismo) ═══════════ -->
   <nav class="nav" id="nav">
     <div class="nav__inner">
-      <a href="index.html" class="nav__brand">
-        TEC AUSTRAL
-      </a>
-      <ul class="nav__links" role="list">
-        <li><a href="servicios.html" class="nav__link">Servicios</a></li>
-        <li><a href="casos.html" class="nav__link" aria-current="page">Casos</a></li>
-        <li><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+      <a href="index.html" class="nav__brand">TEC AUSTRAL</a>
+
+      <ul class="nav__links" role="list" id="nav-menu">
+        <li><a href="index.html#servicios" class="nav__link">Servicios</a></li>
+        <li><a href="casos.html" class="nav__link" aria-current="page">Trabajos</a></li>
+        <li><a href="index.html#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="index.html#contacto" class="nav__link">Contacto</a></li>
       </ul>
+
       <div class="nav__ctas">
-        <a href="https://wa.link/9e8n7b" class="btn btn--fill" target="_blank" rel="noopener">CONTACTAR</a>
+        <a href="https://wa.link/9e8n7b" class="btn btn--fill" target="_blank" rel="noopener">WHATSAPP</a>
       </div>
-      <button class="nav__hamburger" aria-label="Menú" aria-expanded="false" data-nav-toggle>
+
+      <button class="nav__hamburger" aria-label="Menú" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
         <span></span><span></span>
       </button>
-    </div>
-    <div class="nav__mobile" data-nav-mobile>
-      <ul role="list">
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="casos.html">Casos</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-      </ul>
-      <a href="https://wa.link/9e8n7b" class="btn btn--fill" target="_blank" rel="noopener" style="width:100%;justify-content:center;">CONTACTAR</a>
     </div>
   </nav>
 
   <!-- ═══ INTRO ══════════════════════════════════════════════════════════ -->
   <header class="page-header">
     <div class="page-header__inner">
-      <h1 class="page-header__title">Casos reales.</h1>
+      <h1 class="page-header__title">Trabajos.</h1>
       <p class="page-header__lede">Cada proyecto tiene un problema detrás. Aquí documentamos qué encontramos, cómo intervinimos y qué resultado obtuvimos. Sin storytelling vacío.</p>
     </div>
   </header>
 
   <!-- ═══ CASO 01 · ESTEL ════════════════════════════════════════════════ -->
-  <article class="caso" id="estel" style="scroll-margin-top:var(--nav-h)">
+  <article class="caso" id="estel">
     <div class="caso__inner">
       <div class="caso__top">
         <h2 class="caso__title">Escalera Estel</h2>
@@ -74,7 +68,7 @@
             <li>Análisis de la disposición real en obra</li>
             <li>Rediseño de la escalera ajustando la geometría a las cotas reales</li>
             <li>Optimización del diseño para minimizar intervenciones en obra</li>
-            <li>Definición de tipología de uniones y soldaduras conforme al CTE</li>
+            <li>Definición de tipología de uniones y soldaduras</li>
             <li>Entrega de despiece completo listo para fabricación</li>
           </ol>
         </div>
@@ -85,13 +79,12 @@
             <span class="caso__tag">Dibujo técnico</span>
             <span class="caso__tag">Despiece de fabricación</span>
             <span class="caso__tag">Ajuste geométrico</span>
-            <span class="caso__tag">Normativa CTE</span>
           </div>
         </div>
       </div>
       <div class="caso__cta">
         <p>¿Tienes un caso similar?</p>
-        <a href="casos/estel.html" class="btn btn--outline-dark">VER CASO COMPLETO</a>
+        <a href="casos/estel.html" class="btn btn--outline-dark">VER TRABAJO COMPLETO</a>
         <a href="https://wa.link/9e8n7b" class="btn btn--fill" target="_blank" rel="noopener">HABLEMOS</a>
       </div>
     </div>
@@ -134,7 +127,7 @@
       </div>
       <div class="caso__cta">
         <p>¿Tienes un caso similar?</p>
-        <a href="casos/fe.html" class="btn btn--outline-dark">VER CASO COMPLETO</a>
+        <a href="casos/fe.html" class="btn btn--outline-dark">VER TRABAJO COMPLETO</a>
         <a href="https://wa.link/9e8n7b" class="btn btn--fill" target="_blank" rel="noopener">HABLEMOS</a>
       </div>
     </div>
@@ -144,41 +137,33 @@
   <section class="about-cta">
     <div class="about-cta__inner">
       <div class="about-cta__text">
-        <h2 class="about-cta__heading">¿Tienes un proyecto<br>con problemas técnicos?</h2>
+        <h2 class="about-cta__heading">¿Tienes planos que dibujar<br>o algo que reparar?</h2>
         <p class="about-cta__sub">Cuéntanos qué está pasando. Sin compromiso.</p>
       </div>
-      <a href="https://wa.link/9e8n7b" class="btn btn--fill btn--lg" target="_blank" rel="noopener">ESCRIBINOS POR WHATSAPP</a>
+      <a href="https://wa.link/9e8n7b" class="btn btn--fill btn--lg" target="_blank" rel="noopener">ESCRÍBENOS POR WHATSAPP</a>
     </div>
   </section>
 
   <!-- ═══ FOOTER ════════════════════════════════════════════════════════ -->
   <footer class="footer">
     <div class="footer__top">
-      <div class="footer__col hide">
-        <span class="footer__col-label">TEC AUSTRAL</span>
-        <p style="font-size:14px;color:rgba(255,255,255,0.65);line-height:1.6;">Oficina técnica especializada en estructuras metálicas. Barcelona.</p>
-      </div>
-      <div class="footer__col hide">
+      <div class="footer__col">
         <span class="footer__col-label">NAVEGACIÓN</span>
-        <a href="servicios.html">Servicios</a>
-        <a href="casos.html">Casos</a>
-        <a href="nosotros.html">Nosotros</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="casos.html">Trabajos</a>
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="index.html#contacto">Contacto</a>
       </div>
-      <div class="footer__col hide">
+      <div class="footer__col">
         <span class="footer__col-label">CONTACTO</span>
         <a href="tel:+34642033304">+34 642 033 304</a>
-        <a href="mailto:tbayona@tecaustral.com">tbayona@tecaustral.com</a>
         <a href="mailto:comercial@tecaustral.com">comercial@tecaustral.com</a>
-        <address>Carrer de Diputació 122<br>08015 Eixample, Barcelona</address>
+        <address>Carrer de Diputació 122<br>08015 Barcelona</address>
       </div>
     </div>
-    <div class="footer__wordmark-row">
-      <span class="footer__logo" aria-hidden="true">
-        <span class="footer__logo-rect footer__logo-rect--tall"></span>
-        <span class="footer__logo-rect footer__logo-rect--short"></span>
-      </span>
-      <span class="footer__wordmark">TEC AUSTRAL</span>
-    </div>
+
+    <p class="footer__wordmark" aria-hidden="true">TEC AUSTRAL</p>
+
     <div class="footer__bottom">
       <span>&copy; 2026 TEC AUSTRAL · Todos los derechos reservados</span>
     </div>
