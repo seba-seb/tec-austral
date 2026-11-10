@@ -47,7 +47,7 @@ if (form) {
     e.preventDefault();
     const files = [...form.archivos.files];
     if (files.reduce((n, f) => n + f.size, 0) > MAX_BYTES) {
-      say('Los archivos superan 4 MB en total. Envíalos por WhatsApp o a comercial@tecaustral.com.', true);
+      say('Los archivos superan 4 MB en total. Envíalos por WhatsApp o a m.bogado@tecaustral.com.', true);
       return;
     }
     button.disabled = true;
@@ -63,7 +63,7 @@ if (form) {
       form.reset();
       say('Mensaje enviado. Te respondemos en breve.');
     } catch (err) {
-      say(`${err.message} Escríbenos por WhatsApp o a comercial@tecaustral.com.`, true);
+      say(`${err.message} Escríbenos por WhatsApp o a m.bogado@tecaustral.com.`, true);
     } finally {
       button.disabled = false;
     }

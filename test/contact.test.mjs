@@ -25,7 +25,7 @@ const res = await post(ok, [new File(['%PDF'], 'plano.pdf')]);
 assert.equal(res.status, 200);
 assert.equal(sent.length, 1);
 assert.equal(sent[0].reply_to, 'ana@obra.es');
-assert.equal(sent[0].to, 'comercial@tecaustral.com');
+assert.equal(sent[0].to, 'm.bogado@tecaustral.com');
 assert.equal(sent[0].attachments[0].filename, 'plano.pdf');
 
 assert.equal((await post({ ...ok, contacto: '+34 600 000 000' })).status, 200);

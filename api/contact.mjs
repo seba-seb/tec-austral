@@ -1,6 +1,6 @@
 // Formulario de contacto → email vía Resend (https://resend.com/docs/api-reference/emails/send-email)
 // Variables en Vercel: RESEND_API_KEY (obligatoria), CONTACT_FROM (remitente de un dominio verificado
-// en Resend, p. ej. "Web TEC AUSTRAL <web@tecaustral.com>"), CONTACT_TO (por defecto comercial@tecaustral.com).
+// en Resend, p. ej. "Web TEC AUSTRAL <web@tecaustral.com>"), CONTACT_TO (por defecto m.bogado@tecaustral.com).
 
 const MAX_FILES = 5;
 const MAX_BYTES = 4 * 1024 * 1024; // el cuerpo de una función de Vercel no puede pasar de 4,5 MB
@@ -50,7 +50,7 @@ export async function POST(request) {
     headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({
       from: process.env.CONTACT_FROM,
-      to: process.env.CONTACT_TO || 'comercial@tecaustral.com',
+      to: process.env.CONTACT_TO || 'm.bogado@tecaustral.com',
       ...(EMAIL_RE.test(contacto) && { reply_to: contacto }),
       subject: `Web: ${nombre.replace(/[\r\n]+/g, ' ')}`,
       text: `Nombre: ${nombre}\nContacto: ${contacto}\n\n${mensaje}\n\nAdjuntos: ${attachments.length}`,
